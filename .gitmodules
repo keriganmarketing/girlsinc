@@ -1,0 +1,3 @@
+[submodule "wp-content/plugins/contact-form-7-to-database-extension"]
+	path = wp-content/plugins/contact-form-7-to-database-extension
+	url = https://github.com/mdsimpson/contact-form-7-to-database-extension

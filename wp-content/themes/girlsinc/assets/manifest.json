@@ -1,0 +1,58 @@
+{
+  "dependencies": {
+    "main.js": {
+      "files": [
+        "scripts/main.js",
+        "scripts/interaction.js"
+      ],
+      "bower": [
+        "tether",
+        "bootstrap",
+        "isotope",
+        "slick-carousel",
+        "inputmask",
+        "viewport-units-buggyfill",
+        "chart.js",
+        "imagesloaded"
+      ],
+      "main": true
+    },
+    "main.css": {
+      "files": [
+        "styles/main.scss"
+      ],
+      "main": true
+    },
+    "customizer.js": {
+      "files": [
+        "scripts/customizer.js"
+      ]
+    },
+    "admin.js": {
+      "files": [
+        "scripts/admin.js"
+      ]
+    },
+    "verge.min.js": {
+      "files": [
+        "scripts/verge.min.js"
+      ]
+    },
+    "tinymce.js": {
+      "files": [
+        "scripts/tinymce.js"
+      ]
+    },
+    "jquery.js": {
+      "bower": ["jquery"]
+    },
+    "admin.css": {
+      "files": [
+        "styles/admin.scss"
+      ]
+    }
+  },
+  "config": {
+    "devUrl": "http://girlsinctemp.dev"
+  }
+}

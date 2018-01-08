@@ -1,0 +1,144 @@
+.single-impact_stories {
+  &:last-child {
+    margin-bottom: 50px;
+  }
+  .impact-story-share {
+    margin: 20px 0;
+    display: block;
+    p {
+      font-size: .8rem;
+    }
+    .impact-social-icon {
+      color: $gray-dark;
+      display: inline-block;
+      padding-right: 12px;
+      font-size: 1.1rem;
+      &:first-child {
+        padding-left: 12px;
+      }
+    }
+  }
+  .entry-content{
+    .wp-caption{
+      width: 100% !important;
+      clear:both;
+
+      img{
+        padding-right: 70px;
+        float:left;
+        width: 50%;
+        margin: 40px 0;
+      }
+      figcaption{
+        @extend blockquote;
+        //float:right;
+        font-size: $font-size-h4;
+        text-align: left;
+        line-height: 1.5;
+        font-weight: bold;
+        &:before {
+          color: $brand-primary;
+        }
+      }
+    }
+  }
+}
+
+.single-post, .single-blog {
+  header.row {
+    padding-top: 125px;
+    .text-primary {
+      margin-bottom: 25px;
+      display: block;
+    }
+    .entry-title {
+      margin-bottom: 45px;
+    }
+    .story-hr {
+      width: 200px;
+      height: 3px;
+      margin: 0 auto 35px;
+      display: block;
+      background: $brand-primary;
+    }
+  }
+  .entry-content {
+    padding: 0 100px;
+  }
+
+  @include media-breakpoint-down(sm){
+    .entry-content{
+      padding: 0 25px;
+    }
+  }
+  .impact-story-share {
+    margin: 20px 0;
+    display: block;
+    p {
+      font-size: .8rem;
+    }
+    .impact-social-icon {
+      color: $gray-dark;
+      display: inline-block;
+      padding-right: 12px;
+      font-size: 1.1rem;
+      &:first-child {
+        padding-left: 12px;
+      }
+      &:active, &:active i{
+        color:$brand-primary !important;
+      }
+    }
+  }
+
+  .embed-responsive .pbs-embed{
+    height: 100%;
+    padding-bottom: 46px; //Fixes missing controls
+  }
+}
+.single-events{
+  .content{
+    padding-top: 100px;
+  }
+  article header{
+    h6{
+      color: $brand-primary;
+    }
+    h1{
+      font-weight: 300;
+      strong{
+        font-weight: 600;
+      }
+    }
+  }
+  .impact-story-share {
+    margin: 20px 0;
+    padding: 20px;
+    display: inline-block;
+    border-top: 3px solid $brand-primary;
+    p {
+      font-size: .8rem;
+    }
+    .impact-social-icon {
+      color: $gray-dark;
+      display: inline-block;
+      padding-right: 12px;
+      font-size: 1.1rem;
+      &:first-child {
+        padding-left: 12px;
+      }
+
+      &:active, &:active i{
+        color:$brand-primary !important;
+      }
+    }
+  }
+
+  &.postid-759{ //New York Luncheon
+    @include media-breakpoint-only(xs){
+      h1{
+        font-size: 2rem;
+      }
+    }
+  }
+}

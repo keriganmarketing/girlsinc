@@ -1,0 +1,251 @@
+// No Spinners
+input[type=number] {
+  -moz-appearance:textfield;
+
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+}
+
+// Search form
+.search-form {
+  @extend .form-inline;
+}
+
+.search-form label {
+  font-weight: normal;
+  @extend .form-group;
+}
+
+.search-form .search-field {
+  @extend .form-control;
+}
+
+.search-form .search-submit {
+  @extend .btn;
+  @extend .btn-secondary;
+}
+
+/*.row.check-box-holder {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.donation-amt-btns.radio-btns.row {
+  padding-right: 15px;
+  padding-left: 15px;
+}*/
+
+.check-box-holder{
+  margin-top: 10px;
+
+  input {
+    display: none;
+  }
+
+  span{
+    font-size: 20px;
+    font-weight: 300;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+  }
+
+  label{
+    height: 30px;
+    margin-right: 40px;
+  }
+
+  .radio-box{
+    width: 20px;
+    height: 20px;
+    border:1px solid white;
+    display: inline-block;
+    background: white;
+    margin-right: 9px;
+    border-radius: 3px;
+  }
+
+  img.radio-box {
+    border: 1px solid $brand-primary;
+    margin-right: 4px;
+    border-radius: 3px;
+  }
+
+  .radio-button{
+    display: none !important;
+
+    img.radio-box{
+      display: none;
+    }
+
+    &:checked + label{
+      .radio-box{
+        display: none;
+      }
+      img{
+        display: inline-block !important;
+        vertical-align: inherit;
+        border:none;
+      }
+    }
+  }
+}
+
+.radio-btns{
+
+  .radio-group{
+    display: inline-block;
+
+    //Strip browser styling
+    input[type=radio]{
+      border: 0;
+      clip: rect(0 0 0 0);
+      height: 1px;
+      margin: -1px;
+      overflow: hidden;
+      padding: 0;
+      position: absolute;
+      width: 1px;
+    }
+
+    //Style labels as buttons
+    input[type=radio] ~ label{
+      @extend .btn-secondary;
+      display: inline-block;
+      font-weight: 400;
+      line-height: 1.25;
+      text-align: center;
+      white-space: nowrap;
+      vertical-align: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+      user-select: none;
+      border: 1px solid transparent;
+      padding: .5rem 2px;
+      font-size: 1rem;
+      border-radius: .25rem;
+      transition: all .2s ease-in-out;
+      width: 100%;
+
+      &:hover {
+        border-color: #ed1849;
+        background-color: #fff;
+        color: #ed1849;
+      }
+    }
+
+    //Selected color
+    input[type=radio]:checked ~ label{
+      color: $brand-primary;
+      border-color: $brand-primary;
+    }
+
+    @include media-breakpoint-down(sm){
+      flex-basis: 0 !important;
+      padding-left:10px;
+      padding-right:10px;
+
+      input[type=radio] ~ label{
+        font-size:20px;
+      }
+    }
+  }
+}
+
+#other-amount-text-group{
+  display:none;
+}
+
+.container-dark{
+  input[type="text"],input[type="number"]{
+    background-color: lighten($gray-dark, 20%);
+    color: $white;
+
+    &:focus{
+      border-color: lighten($gray-dark, 40%);
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .check-box-holder {
+    label {
+      margin-right: 15px;
+    }
+
+    span {
+      font-size: 15px;
+    }
+  }
+}
+
+#newsletter-form{
+  padding: 40px;
+
+  .form-group{
+    margin-bottom: 0;
+
+    &.form-fields{
+      .d-block{
+        float: left;
+      }
+      .form-control{
+        background: transparent;
+        border-width: 0 0 2px 0;
+        border-color: $white;
+        border-radius: 0;
+        color: $white;
+        padding: .2rem 0;
+        font-size: .8em;
+      }
+      @include media-breakpoint-only(xs){
+        .col-email{
+          margin-top: 10px;
+        }
+      }
+    }
+    &.form-submit{
+      input[type=submit]{
+        display: block;
+        width: 200px;
+        background: none;
+        margin: 30px auto;
+        padding: 10px 0;
+        border: 2px solid transparent;
+        border-radius: 0;
+        font-family: $font-family-sans-serif;
+        font-weight: bold;
+        font-size: 1rem;
+        text-transform: uppercase;
+        cursor: pointer;
+
+        &:focus, &:active {
+          outline: none;
+        }
+
+        &:hover {
+          background: transparent !important;
+          border: 2px solid white;
+        }
+      }
+    }
+  }
+
+  .wpcf7-not-valid-tip{
+    color: $white;
+  }
+  div.wpcf7 .ajax-loader,
+  .wpcf7-validation-errors{
+    display: none !important;
+  }
+  .wpcf7-response-output {
+    border: 0 none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+}

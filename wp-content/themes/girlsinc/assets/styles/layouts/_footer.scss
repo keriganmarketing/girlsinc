@@ -1,0 +1,170 @@
+footer {
+
+  #newsletter-form{
+    //See: components/_forms.scss
+  }
+
+  //Red Prefooter
+  .prefooter-ctas {
+    padding-top: 40px;
+    font-size: 20px;
+    font-weight: 700;
+
+    > .d-block{
+      float: left;
+    }
+
+    a {
+      color: $white;
+
+      .cta-label{
+        border-bottom-color: transparent;
+      }
+
+      &:hover{
+        .cta-label {
+          border-bottom-color: $gray-dark;
+        }
+      }
+    }
+  }
+
+  .footer-social {
+    padding: 0 70px;
+    position: absolute;
+    bottom: 140px;
+    //left: 22%;
+    width: 100%;
+    font-size: 1.2em;
+
+    @include media-breakpoint-down(md){
+      text-align: center;
+      width: auto;
+    }
+  }
+
+  //Dark Footer
+  .footer-sidebar {
+    padding-top: 40px;
+    font-size: $default-font-size;
+    font-weight: 300;
+
+    .widget-title {
+      text-transform: uppercase;
+    }
+    .menu {
+      padding: 0;
+      list-style: none;
+      li {
+          padding-bottom: 15px;
+      }
+      a {
+        color: $white;
+      }
+    }
+  }
+  .footer-social {
+
+    span {
+      font-size: 0.75em;
+    }
+
+    .social-icons {
+      display: inline;
+      padding: 0;
+      list-style: none;
+
+      .social-link {
+        display: inline-block;
+        margin-left: 25px;
+
+        a {
+          color: $white;
+          &:hover {
+            color: $brand-primary;
+          }
+        }
+      }
+    }
+  }
+  hr {
+    border-color: darken($gray, 30%);
+  }
+  .footer-copyright {
+    font-size: $font-size-small;
+    font-family: Arial, sans-serif;
+    padding: 0 70px
+  }
+
+  @include media-breakpoint-down(lg) {
+    .footer-social {
+      position: relative;
+      bottom: 0%;
+      left: 0;
+      padding: 0;
+
+      span {
+        font-size: .9rem;
+      }
+
+      .social-icons {
+        .social-link {
+          margin: 0 12px;
+
+          a {
+            font-size: 1.1rem;
+          }
+        }
+      }
+    }
+  }
+
+  @include media-breakpoint-down(sm){
+    .brand{
+      padding-right:0;
+      left:auto;
+      -webkit-transform:none;
+      transform:none;
+
+      img {
+        min-width: 80px;
+      }
+    }
+  }
+
+  #mobile-link-to-top{
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 5;
+
+    a{
+      display:block;
+      width: 100%;
+      height: 100%;
+      background: $brand-primary;
+      color: $white;
+      font-size: 1.2rem;
+      line-height: 1;
+      padding-left: 5px;
+
+      i{
+        position:relative;
+        top: 0;
+        -webkit-transition: top .25s;
+        -moz-transition: top .25s;
+        -o-transition: top .25s;
+        transition: top .25s;
+      }
+      &:hover i{
+        top: -5px;
+      }
+      &:focus i,
+      &:active i{
+        top: 0;
+      }
+    }
+  }
+}

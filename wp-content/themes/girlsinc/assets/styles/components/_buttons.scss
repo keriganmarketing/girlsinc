@@ -1,0 +1,107 @@
+.girlsinc-ui-btn {
+  @include button-ui();
+}
+
+.container-dark{
+  .btn-secondary{
+    @extend .container-dark;
+    border-color: #fff;
+
+    &:hover{
+      @extend .container-primary;
+    }
+  }
+}
+
+.slick-arrow{
+  @extend .container-primary;
+  border: 0 none;
+  font-size: 0;
+  position:absolute;
+  top:50%;
+  z-index: 1;
+  width: 70px;
+
+  &:before{
+    font-family: $font-family-icon;
+    font-size: $font-size-h2;
+  }
+
+  &.slick-prev{
+    left: 0;
+
+    &:before{
+      content: '\f104';
+    }
+  }
+  &.slick-next{
+    right: 0;
+
+    &:before{
+      content: '\f105';
+    }
+  }
+  &.slick-disabled{
+    display:none !important;
+  }
+}
+
+.slick-dots{
+  list-style: none;
+  position: absolute;
+  bottom:0;
+
+  li{
+    display: inline-block;
+
+    button{
+      font-size: 0;
+      border: 0 none;
+      background: none;
+
+      &:before{
+        color: $white;
+        font-family: $font-family-icon;
+        font-size: $font-size-small;
+        content: '\f10c';
+      }
+
+      &:focus{
+        outline: none;
+      }
+    }
+
+    &.slick-active button:before{
+      content: '\f111';
+    }
+  }
+}
+
+@media all and (max-width: 991px) {
+  .gallery-item {
+    p.gallery-headline-copy {
+      font-size: 1.5rem;
+    }
+  }
+
+  .slick-arrow {
+    top: 30%;
+    width: 30px;
+  }
+
+  .slick-arrow:before {
+    font-family: $font-family-icon;
+    font-size: 1.25rem;
+  }
+}
+
+/* ----------- override single impact stories !important link padding style ---------- */
+@include media-breakpoint-down(lg){
+  .single-impact_stories .btn{
+    padding:.5rem 1rem !important;
+
+    &:hover{
+      padding:.5rem 1rem !important;
+    }
+  }
+}

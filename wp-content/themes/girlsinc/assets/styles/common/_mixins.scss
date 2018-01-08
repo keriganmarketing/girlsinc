@@ -1,0 +1,16 @@
+@mixin button-ui($border-color: $brand-primary, $border-width: 4px, $padding: 5px) {
+  & {
+    padding: ($border-width+$padding) ($border-width+$padding) $padding;
+    border-bottom: $border-width solid $border-color;
+    color: $black;
+    cursor: pointer;
+  }
+  &:hover {
+    padding: $padding;
+    border: $border-width solid $border-color;
+  }
+  &:active, &:focus {
+    background: $border-color;
+    color: $white;
+  }
+}

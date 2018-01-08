@@ -1,0 +1,30 @@
+/* CSS Document */
+body {
+margin:0px 0px 0px 0px;
+background-color:#000000;
+}
+a:link {
+color:#DE0031;
+}
+a:visited {
+color:#DE0031;
+}
+.contentArea {
+background-image:url(images/back.jpg);
+background-repeat:no-repeat;
+background-color:#FFFFFF;
+color:#000000;
+font-family:Arial, Helvetica, sans-serif;
+font-size:11px;
+padding:20px 20px 20px 20px;
+}
+.footer {
+background-color:#000000;
+color:#FFFFFF;
+font-family:Arial, Helvetica, sans-serif;
+font-size:10px;
+}
+.title {
+font-size:16px;
+font-weight:bold;
+}
