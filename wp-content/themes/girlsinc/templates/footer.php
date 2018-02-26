@@ -101,7 +101,7 @@
 '  <form id="email-registration-form" class="email-registration-form" method="post" action="javascript:void(0)">' +
 '    <div class="errors hidden"></div>' +
 '    <div class="section contact">' +
-'      <h5 class="text-center">Sign up for our mailing list</h5>' +
+'      <h5 class="text-center" style="margin-bottom: 20px;">Sign up for our mailing list</h5>' +
 '      <div class="field text first-name required" >' +
 '        <label for="first-name"><span class="label">First Name</span>' /*<span class="required-star">*</span></label>'*/ +
 '        <input id="first-name" name="first-name" class="required" type="text"></input>' +
