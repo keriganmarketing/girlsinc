@@ -388,7 +388,7 @@ img {
   text-decoration: none;
   font-weight: normal !important;
   border-bottom: 0 !important;
-  
+
   &:hover {
     border: 0 !important;
     text-decoration: underline;
@@ -400,7 +400,7 @@ img {
   padding: 50px 0;
 }
 
-input[type=submit]:hover {
+input[type=submit]:hover, a#donate-btn:hover{
   background-color: #c30f39 !important;
   border-color: #b90e36;
 }
@@ -419,7 +419,7 @@ blockquote:before{
   font-family: Arial, sans-serif;
 }
 
-input[type=submit] {
+input[type=submit], a#donate-btn {
   background-color: $brand-primary;
   color: #fff;
   font-size: .7rem;

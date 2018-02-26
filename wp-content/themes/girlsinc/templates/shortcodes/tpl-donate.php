@@ -3,7 +3,17 @@
 <div class="donate-inner">
     <h3>Donate</h3>
     <p>Give to ensure girls have the experiences and opportunities to thrive.</p>
-    <form action="https://www.classy.org/checkout/donation" method="GET" target="_blank" novalidate>
+    <div class="row">
+        <div class="col-md-12">
+            <a href="/donate-now" id="donate-btn">Donate Now</a>
+            <?php
+            if(! is_page(694)) {
+                echo '<a href="/donate" class="offset-md-1 text-center">Learn More</a>';
+            }
+            ?>
+        </div>
+    </div>
+    <!-- <form action="https://www.classy.org/checkout/donation" method="GET" target="_blank" novalidate>
         <div class="row">
             <div class="col-12">
                 <label for="donate-amt">I want to donate:</label>
@@ -53,13 +63,11 @@
             </div>
         </div>
 
-
-
         <div class="row">
             <div class="col-md-12">
                 <input type="submit" id="submit-btn" value="Donate" />
                 <input type="hidden" name="eid" value="147155">
             </div>
         </div>
-    </form>
+    </form> -->
 </div>
