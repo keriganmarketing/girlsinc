@@ -76,17 +76,9 @@ function widgets_init()
         'after_title' => '</h6>'
     ]);
     register_sidebar([
-        'name' => __('Footer 3', 'sage'),
-        'id' => 'sidebar-footer-3',
-        'before_widget' => '<section class="col-xl-4 col-lg-4 col-xs-12 col-md-12 widget %1$s %2$s">',
-        'after_widget' => '</section>',
-        'before_title' => '<h6 class="widget-title">',
-        'after_title' => '</h6>'
-    ]);
-    register_sidebar([
         'name' => __('Footer 2', 'sage'),
         'id' => 'sidebar-footer',
-        'before_widget' => '<section class="col-xl-4 col-lg-4 col-xs-12 col-md-12 widget %1$s %2$s">',
+        'before_widget' => '<section class="col-12 col-md-4 widget %1$s %2$s">',
         'after_widget' => '</section>',
         'before_title' => '<h6 class="widget-title">',
         'after_title' => '</h6>'
