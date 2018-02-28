@@ -19,7 +19,7 @@ class BrandWidget extends \WP_Widget
             <a class="brand" href="<?= esc_url(home_url('/')); ?>">
                 <img src="<?= Assets\asset_path('images/logo-inverse.png') ?>">
             </a>
-            <p class="tagline text-center text-md-left"><?php bloginfo('description'); ?></p>
+            <p class="tagline mx-auto"><?php bloginfo('description'); ?></p>
         </div>
         <?php
         echo $args['after_widget'];
