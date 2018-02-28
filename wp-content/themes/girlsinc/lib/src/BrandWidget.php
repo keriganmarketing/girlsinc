@@ -15,11 +15,11 @@ class BrandWidget extends \WP_Widget
     {
         echo $args['before_widget'];
         ?>
-        <div class="girls-inc-branding mx-auto">
+        <div class="girls-inc-branding">
             <a class="brand" href="<?= esc_url(home_url('/')); ?>">
                 <img src="<?= Assets\asset_path('images/logo-inverse.png') ?>">
             </a>
-            <p class="tagline"><?php bloginfo('description'); ?></p>
+            <p class="tagline hidden-md-down"><?php bloginfo('description'); ?></p>
         </div>
         <?php
         echo $args['after_widget'];
