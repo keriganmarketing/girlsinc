@@ -319,11 +319,14 @@
     </div>
     <div class="container-fluid container-dark">
         <div class="row footer-sidebar">
-            <div class="col-6 col-lg-3">
+            <div class="col-6 l-lg-3">
                 <div class="row">
                     <?php dynamic_sidebar('sidebar-footer-init'); ?>
+                </div>
+            </div>
+            <div class="col-6 l-lg-3">
+                <div class="row">
                     <?php dynamic_sidebar('sidebar-footer'); ?>
-                    <?php dynamic_sidebar('sidebar-footer-3'); ?>
                 </div>
             </div>
         </div>
