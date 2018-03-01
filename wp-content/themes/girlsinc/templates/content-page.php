@@ -1,4 +1,4 @@
-<?php $kma_style = is_page(1816) ? "style='min-height: 80vh; padding-top: 30px;'" : ''; ?>
+<?php $kma_style = is_page(1816) ? "style='min-height: 70vh; padding-top: 30px;'" : ''; ?>
 <div class="page-content row">
     <div class="col-12" <?= $kma_style ?>>
         <?php the_content(); ?>
