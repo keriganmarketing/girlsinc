@@ -1,5 +1,6 @@
+<?php $kma_style = is_page(1816) ? "style='min-height: 100vh;'" : ''; ?>
 <div class="page-content row">
-    <div class="col-12">
+    <div class="col-12" <?= $kma_style ?>>
         <?php the_content(); ?>
     </div>
 </div>
