@@ -1,5 +1,6 @@
 <?php use Roots\Sage\Assets; ?>
 <footer>
+    <?php if (! is_page(1816)) : ?>
     <div class="container-fluid container-primary">
         <?php if(!is_front_page()) { ?>
         <div class="row prefooter-ctas text-center footer-icons clearfix">
@@ -317,6 +318,7 @@
             </div>
         </div>
     </div>
+    <?php endif; ?>
     <div class="container-fluid container-dark">
         <div class="row footer-sidebar">
             <div class="col-12 col-md-3 text-center text-md-left">
