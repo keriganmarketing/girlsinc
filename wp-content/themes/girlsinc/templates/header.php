@@ -63,8 +63,6 @@ use GirlsInc\MarcUSA\NavWalker;
         </div>
         <div id="secondary-navigation-inner">
             <a href="/donate" class="btn btn-primary hidden-lg-down">Donate</a>
-            <a href="https://online.traxsolutions.com/girlsinc/baycounty#/dashboard" class="btn btn-primary hidden-lg-down">Parent Access</a>
-
             <div class="header-social">
                 <span>Connect With Us</span>
                 <?= do_shortcode('[social_icons]'); ?>
