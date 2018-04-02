@@ -1327,6 +1327,7 @@
     }
     article.category-news:nth-child(2){
       margin-top:-80px;
+      margin-bottom: 80px;
 
     }
     .img-fluid{
@@ -1339,6 +1340,7 @@
       &:first-of-type{
         //.img-fluid{
         margin-top:-90px !important;
+        margin-bottom:90px !important;
         //}
       }
       &:last-of-type{
