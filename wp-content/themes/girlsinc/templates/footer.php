@@ -341,7 +341,7 @@
         <hr>
         <div class="row footer-copyright">
             <div class="col-">
-                <p>&copy;<?= date('Y'); ?> Girls Inc. 120 Wall Street, New York, NY 10005-39021 ∙ <a href="mailto:communications@girlsinc.org">communications@girlsinc.org</a></p>
+                <p>&copy;<?= date('Y'); ?> Girls Inc. 1100 Fountain Avenue, Panama City, FL 32401 ∙ <a href="mailto:communications@girlsinc.org">communications@girlsinc.org</a></p>
             </div>
         </div>
     </div>
